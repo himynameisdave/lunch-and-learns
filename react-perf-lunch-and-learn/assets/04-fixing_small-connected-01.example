@@ -1,0 +1,17 @@
+class LargeComponent extends Component {
+    static propTypes = {
+        one: PropTypes.string.isRequired,
+        two: PropTypes.number.isRequired,
+        three: PropTypes.bool.isRequired,
+    }
+
+    render() {
+        return (
+            <div>
+                <ComponentOne one={this.props.one} />
+                <ComponentTwo two={this.props.two} />
+                <ComponentThree three={this.props.three} />
+            </div>
+        );
+    }
+}

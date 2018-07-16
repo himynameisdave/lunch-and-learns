@@ -1,0 +1,22 @@
+service: nest-pas-server
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  environment: ${file(./.env.json)}
+  stage: dev
+
+functions:
+  me:
+    handler: handler.me
+    events:
+      - http:
+          path: me
+          method: get
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+custom:
+  webpackIncludeModules: true

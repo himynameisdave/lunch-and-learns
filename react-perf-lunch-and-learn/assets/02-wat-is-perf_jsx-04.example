@@ -1,0 +1,5 @@
+const name = `Bruce`;
+
+h('div', { id: name },
+    'They call me ', name, '!'
+)

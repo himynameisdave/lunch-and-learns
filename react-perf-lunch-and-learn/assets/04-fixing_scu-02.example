@@ -1,0 +1,14 @@
+class BruceBeingChill extends Component {
+
+    static propTypes = {
+        text: PropTypes.string.isRequired,
+        onBruceClick: PropTypes.func.isRequired,
+    }
+
+    shouldComponentUpdate(nextProps) {
+        return this.props.text !== nextProps.text;
+    }
+
+    //  ...
+
+}

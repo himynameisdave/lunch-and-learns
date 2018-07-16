@@ -1,0 +1,18 @@
+//  LargeComponent.jsx
+import React from 'react';
+const LargeComponent = () => (
+    <div>
+        <ComponentOne />
+        <ComponentTwo />
+        <ComponentThree />
+    </div>
+);
+
+export default LargeComponent;
+
+
+//  ComponentOne.jsx
+import { connect } from 'react-redux';
+const mapStateToProps = state => ({ one: state.one });
+
+export default connect(mapStateToProps, null)(ComponentOne);

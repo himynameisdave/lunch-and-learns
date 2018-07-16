@@ -1,0 +1,16 @@
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
+
+class BruceBeingChill extends PureComponent {
+    static propTypes = {
+        someProp: PropTypes.string.isRequired
+    };
+
+    render () {
+        return (
+            <div>
+                {this.props.someProp}
+            </div>
+        )
+    }
+}

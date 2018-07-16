@@ -1,0 +1,29 @@
+class GiantGrandchild extends Component {
+
+    static propTypes = {
+        objectives: PropTypes.shape({
+            yep: PropTypes.string,
+            pretty: PropTypes.string,
+            crazy: PropTypes.bool,
+            howMany: PropTypes.bool,
+            props: PropTypes.number,
+            areNested: PropTypes.shape({
+                insane: PropTypes.bool,
+                really: PropTypes.bool,
+                whenYouThinkAboutIt: PropTypes.number,
+            }),
+            anotherOne: PropTypes.string
+
+        }).isRequired,
+    }
+
+    //  ...yikes...
+
+    render () {
+        return (
+            <AnotherComponentWayDownTheTree
+                singlePropThatINeeded={this.props.singlePropThatINeeded}
+            />
+        )
+    }
+}

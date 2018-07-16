@@ -1,0 +1,53 @@
+
+.intro__slide-01 {
+    &__heading {
+        font-weight: 300 !important; // override stupid Spectacle style
+        line-height: 1.6181;
+    }
+}
+
+.intro__slide-02 {
+    &__date {
+        display: block;
+        font-weight: 300;
+        font-size: 2.65rem;
+        margin: 20px 0 0 10px;
+        text-align: left;
+    }
+}
+
+.intro__slide-05 {
+    &__image {
+        margin: 5% 0 0 !important;
+        width: 85%;
+    }
+}
+
+.intro__slide-06 {
+    &__heading {
+        font-weight: 300 !important;
+        margin: 5% 0 30px;
+    }
+    &__list {
+        font-weight: 300;
+        list-style: none;
+        margin: 60px auto 0;
+        padding: 0 0 0 15px;
+        text-align: left;
+        width: 80%;
+
+        li {
+            font-size: 2.25rem !important; // override stupid Spectacle style
+            margin-bottom: 3rem;
+            padding: 0 0 0 35px;
+            position: relative;
+            &:before {
+                content: '\1F449';
+                display: inline-block;
+                font-size: 1.15em;
+                position: absolute;
+                left: -30px;
+            }
+        }
+    }
+}

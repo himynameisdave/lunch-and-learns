@@ -1,0 +1,3 @@
+console.time(key);
+//  Do shit that seems expensive
+console.timeEnd(key);

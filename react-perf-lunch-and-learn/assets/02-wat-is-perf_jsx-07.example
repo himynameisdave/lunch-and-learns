@@ -1,0 +1,8 @@
+{
+    nodeName: 'div',
+    attributes: { id: 'bruce' },
+    children: [
+        'They call me Bruce!',
+        { nodeName: 'hr' }
+    ]
+}

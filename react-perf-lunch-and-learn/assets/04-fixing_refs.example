@@ -1,0 +1,18 @@
+class BruceBeingChill extends Component {
+    //  ...
+
+    render () {
+        const getSomeProp = () => `someProp`;
+        return (
+            <div>
+                <ChildComponent
+                    someProp={getSomeProp()}
+                    somePeople={['dave', 'bruce', 'tmoney']}
+                    onClick={() => {
+                        // ... do something
+                    }}
+                />
+            </div>
+        )
+    }
+}

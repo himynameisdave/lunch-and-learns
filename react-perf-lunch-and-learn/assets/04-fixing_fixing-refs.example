@@ -1,0 +1,23 @@
+class BruceBeingChill extends Component {
+    //  ...
+
+    someProp = `someProp`;
+
+    somePeople = ['dave', 'bruce', 'tmoney'];
+
+    handleChildClick = () => {
+        //  ... do shit
+    }
+
+    render () {
+        return (
+            <div>
+                <ChildComponent
+                    someProp={this.someProp}
+                    somePeople={this.somePeople}
+                    onClick={handleChildClick}
+                />
+            </div>
+        )
+    }
+}

@@ -1,0 +1,9 @@
+const BruceBeingChill = (props) => (
+    <div>
+        Bruce is {this.props.chillLevel} today
+    </div>
+);
+
+BruceBeingChill.propTypes = {
+    chillLevel: PropTypes.string.isRequired
+};

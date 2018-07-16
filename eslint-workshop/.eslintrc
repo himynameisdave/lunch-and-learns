@@ -1,0 +1,14 @@
+---
+"extends":
+  - "himynameisdave/configurations/browser"
+
+"env":
+  "browser": true,
+
+"globals":
+  "afterEach": true,
+  "describe": true,
+  "expect": true,
+  "it": true,
+  "jest": true,
+  "test": true

@@ -1,0 +1,38 @@
+{
+  "name": "async-workshop",
+  "version": "1.0.0",
+  "description": "A workshop about async/await in JavaScript for the front-end team at 7Geese.",
+  "main": "index.js",
+  "scripts": {
+    "one": "babel-node index.js 1",
+    "two": "babel-node index.js 2",
+    "three": "babel-node index.js 3",
+    "four": "babel-node index.js 4",
+    "five": "babel-node index.js 5"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himynameisdave/async-workshop.git"
+  },
+  "keywords": [
+    "presentation",
+    "javascript",
+    "learning"
+  ],
+  "author": "himynameisdave <d@velunny.com>",
+  "bugs": {
+    "url": "https://github.com/himynameisdave/async-workshop/issues"
+  },
+  "homepage": "https://github.com/himynameisdave/async-workshop#readme",
+  "private": true
+}

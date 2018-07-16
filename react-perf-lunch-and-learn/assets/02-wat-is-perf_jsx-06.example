@@ -1,0 +1,6 @@
+turnIntoVDOM(
+    'div',
+    { id: 'bruce' },
+    'They call me Bruce!',
+    turnIntoVDOM('hr')
+)

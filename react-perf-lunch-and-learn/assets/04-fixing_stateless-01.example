@@ -1,0 +1,14 @@
+class BruceBeingChill extends Component {
+
+    static propTypes = {
+        chillLevel: PropTypes.string.isRequired
+    }
+
+    render () {
+        return (
+            <div>
+                Bruce is {this.props.chillLevel} today
+            </div>
+        )
+    }
+}

@@ -1,0 +1,10 @@
+class Parent extends Component {
+    // ...
+    render() {
+        return (
+            <div>
+                <SomeStatelessComponent name="bruce" />
+            </div>
+        );
+    }
+}

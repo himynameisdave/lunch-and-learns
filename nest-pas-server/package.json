@@ -1,0 +1,37 @@
+{
+  "name": "nest-pas-server",
+  "version": "0.1.0",
+  "description": "A stellar workshop by one of the greatest minds of our generation, Dave Lunny, on the topic of the Serverless framework",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "npm run lint && npm run test && serverless deploy -v",
+    "lint": "eslint ./src/ --fix",
+    "start": "serverless offline start",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "engines": {
+    "node": ">=6.10.0"
+  },
+  "author": "himynameisdave",
+  "homepage": "https://github.com/himynameisdave/nest-pas-server#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^21.2.1",
+    "serverless": "^1.24.0",
+    "serverless-offline": "^3.16.0",
+    "serverless-webpack": "^4.0.0",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "moment": "^2.19.1"
+  }
+}

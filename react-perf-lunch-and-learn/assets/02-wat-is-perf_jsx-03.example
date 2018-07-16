@@ -1,0 +1,5 @@
+const name = `Bruce`;
+
+<div id={ name }>
+    They call me { name }!
+</div>
