@@ -12,3 +12,6 @@ yarn-debug.log*
 
 # dotenv environment variables file
 .env
+
+# N'est pas bundles
+*dist/
