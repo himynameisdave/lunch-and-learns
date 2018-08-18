@@ -1,17 +1,12 @@
-## presentation-template
+## 🌭 Is a hot dog a sandwich?
 
-A template for creating new React-based presentations with the [Spectacle](http://formidable.com/open-source/spectacle/) framework.
+A lunch and learn that digs deep into the greatest question our universe has ever known: Is a hot dog a sandwich?
 
 ### How to
 
-Install the dependencies:
-
 ```
 yarn install
-```
-
-Start up the dev server:
-
-```
 yarn start
 ```
+
+Then [`localhost:3000`](http://localhost:3000/). Boom.
