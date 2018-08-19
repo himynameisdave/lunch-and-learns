@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */
+        "target": "esnext",
+        /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+        "module": "commonjs",
+        /* Specify library files to be included in the compilation. */
+        "lib": [],
+        /* Allow javascript files to be compiled. */
+        "allowJs": true,
+        /* Report errors in .js files. */
+        "checkJs": true,
+        /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
+        "jsx": "preserve",
+        /* Generates corresponding '.d.ts' file. */
+        "declaration": true,
+        /* Generates a sourcemap for each corresponding '.d.ts' file. */
+        "declarationMap": true,
+        /* Generates corresponding '.map' file. */
+        "sourceMap": true,
+        /* Concatenate and emit output to single file. */
+        "outFile": "./dist/bundle.js",
+        /* Redirect output structure to the directory. */
+        "outDir": "lib",
+        /* Do not emit comments to output. */
+        "removeComments": true,
+        /* Enable all strict type-checking options. */
+        "strict": true
+    }
+}
