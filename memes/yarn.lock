@@ -1837,6 +1837,15 @@ cli-width@^2.0.0:
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
   integrity sha1-/xnt6Kml5XkyQUewwR8PvLq+1jk=
 
+clipboard@^1.5.5:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-1.7.1.tgz#360d6d6946e99a7a1fef395e42ba92b5e9b5a16b"
+  integrity sha1-Ng1taUbpmnof7zleQrqStem1oWs=
+  dependencies:
+    good-listener "^1.2.2"
+    select "^1.1.2"
+    tiny-emitter "^2.0.0"
+
 clipboard@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.0.tgz#4661dc972fb72a4c4770b8db78aa9b1caef52b50"
@@ -5863,6 +5872,13 @@ preserve@^0.2.0:
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
 
+prismjs@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.6.0.tgz#118d95fb7a66dba2272e343b345f5236659db365"
+  integrity sha1-EY2V+3pm26InLjQ7NF9SNmWds2U=
+  optionalDependencies:
+    clipboard "^1.5.5"
+
 prismjs@^1.6.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.13.0.tgz#edcc14a90bbd72a03e5ffd2bab81a04c79a607a6"
@@ -6960,10 +6976,10 @@ spectacle-renderer@^0.0.3:
     puppeteer "^0.12.0"
     yargs "^9.0.1"
 
-spectacle@^4.0.4:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/spectacle/-/spectacle-4.2.2.tgz#e519bb7a515309a738dc908cae69974a4b97f71c"
-  integrity sha512-TgUo9KjPo0pILJYoktdj/lmQ+5zmlGMUL8mAKuoqJGka2V/7ZFeJYTiA6s5ReQfhoIjqlJDasqExqJ/U1ly50w==
+spectacle@4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/spectacle/-/spectacle-4.2.3.tgz#76233ee093b04b443d5e3fc383ed312dd33a09ea"
+  integrity sha512-H+SZqSsnnhluUa6dpoB4kQhftwJybntQOo9sve54gd2SEr0gPesl7KsLpv/8yR3f9IQqFtxjWZnj7nbCZmDNlA==
   dependencies:
     deep-object-diff "^1.0.4"
     emotion "^8.0.8"
@@ -6971,7 +6987,7 @@ spectacle@^4.0.4:
     lodash "^4.17.4"
     marksy "^6.0.2"
     normalize.css "^7.0.0"
-    prismjs "^1.6.0"
+    prismjs "1.6.0"
     react-emotion "^8.0.8"
     react-live "^1.8.0-2"
     react-redux "^5.0.5"

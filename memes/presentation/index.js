@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {
     Appear,
+    Anim,
     Code,
     Deck,
     Heading,
@@ -18,12 +19,28 @@ import preloader from '../node_modules/spectacle/src/utils/preloader.js';
 
 //  The list of images
 const images = {
-    renderMethodExample: require('../assets/001-render-method-example.png'),
-    staticClassProperties: require('../assets/002-static-class-prop-example.png'),
-    usingChildren: require('../assets/003-using-children-to-share-state.png'),
-    usingChildrenUsage: require('../assets/004-using-children-usage.png'),
-    neat: require('../assets/005-neat.gif'),
-    brains: require('../assets/006-finale-brains.gif'),
+    fireDave: require('../assets/001-fire-dave.gif'),
+    richardDawkins: require('../assets/002-richard-dawkins.jpg'),
+    baddaBing: require('../assets/003-badda-bing.jpg'),
+    kilroy: require('../assets/004-kilroy.jpg'),
+    jesus: require('../assets/005-jesus.jpg'),
+    macros: require('../assets/006-image-macros.png'),
+    cheeseburger: require('../assets/007-i-can-haz-cheeseburger.jpg'),
+    advice: require('../assets/008-advice-animals.gif'),
+    allYourBase: require('../assets/009-all-your-base.png'),
+    allYourSimpsons: require('../assets/009-all-your-simpsons.jpg'),
+    allYourTrump: require('../assets/009-all-your-trump.png'),
+    doge: require('../assets/010-doge-meme.jpg'),
+    planking: require('../assets/011-planking.jpg'),
+    distractedOne: require('../assets/012-distracted-boyfriend-og.jpg'),
+    distractedTwo: require('../assets/012-distracted-boyfriend-02.png'),
+    distractedThree: require('../assets/012-distracted-boyfriend-03.png'),
+    lampsOg: require('../assets/012-lamps-og.jpg'),
+    lampsDistracted: require('../assets/012-lamps-meme.jpg'),
+
+
+    knowYrMeme: require('../assets/013-know-your-meme.png'),
+    finale: require('../assets/014-finale.png'),
 };
 //  Preload images
 preloader(images);
@@ -38,277 +55,1177 @@ export default class Presentation extends Component { // eslint-disable-line
                 {/* Slide 1 */}
                 <Slide
                     align="flex-start"
-                    notes="Here are links to examples if you really wanna be keen. "
+                    notes=""
                 >
                     <Heading
                         margin="2rem 0 2rem"
                         size={3}
                         textAlign="left"
                     >
-                        Compound Component Pattern in React
+                        Lunch and Learn
                     </Heading>
                     <Heading
                         margin="0 0 6rem"
                         size={4}
                         textAlign="left"
                     >
-                        🌩 ⚡️ ⛈ talk
+                        December 5th, 2018
                     </Heading>
-                    <Appear>
-                        <Code lineHeight="1" style={{ fontSize: '1.25rem' }}>
-                            https://github.com/himynameisdave/lunch-and-learns/tree/master/compound-components-lightning/examples
-                        </Code>
-                    </Appear>
-                    <Appear>
-                        <Text margin="1rem 0" style={{ fontSize: '2rem' }}>or</Text>
-                    </Appear>
-                    <Appear>
-                        <Code style={{ fontSize: '1.75rem' }}>
-                            bit.ly/boys-are-back-in-town
-                        </Code>
-                    </Appear>
                 </Slide>
                 {/* Slide 2 */}
                 <Slide
+                    align="center center"
+                    notes=""
+                >
+                    <Appear>
+                        <div
+                            style={{
+                                fontSize: '3rem',
+                                position: 'absolute',
+                                top: '20%',
+                                left: '20%',
+                            }}
+                        >
+                            👌
+                        </div>
+                    </Appear>
+                    <Appear>
+                        <div
+                            style={{
+                                fontSize: '4rem',
+                                position: 'absolute',
+                                top: '-10%',
+                                left: '70%',
+                            }}
+                        >
+                            👌
+                        </div>
+                    </Appear>
+                    <Appear>
+                        <div
+                            style={{
+                                fontSize: '8rem',
+                                position: 'absolute',
+                                top: '70%',
+                                left: '25%',
+                            }}
+                        >
+                            👌
+                        </div>
+                    </Appear>
+                    <Appear>
+                        <div
+                            style={{
+                                fontSize: '5rem',
+                                position: 'absolute',
+                                top: '-52%',
+                                left: '35%',
+                            }}
+                        >
+                            👌
+                        </div>
+                    </Appear>
+                    <Appear>
+                        <div
+                            style={{
+                                fontSize: '4rem',
+                                position: 'absolute',
+                                top: '82%',
+                                left: '70%',
+                            }}
+                        >
+                            👌
+                        </div>
+                    </Appear>
+                    <Appear>
+                        <div
+                            style={{
+                                fontSize: '5rem',
+                                position: 'absolute',
+                                top: '-65%',
+                                left: '55%',
+                            }}
+                        >
+                            👌
+                        </div>
+                    </Appear>
+                    <Appear>
+                        <div
+                            style={{
+                                fontSize: '5rem',
+                                position: 'absolute',
+                                top: '90%',
+                                left: '52%',
+                            }}
+                        >
+                            👌
+                        </div>
+                    </Appear>
+                    <Anim
+                        fromStyle={{
+                            transform: 'scale(0) rotate(-540deg)',
+                        }}
+                        toStyle={[
+                            {
+                                transform: 'scale(1.75) rotate(25deg)',
+                            },
+                            {
+                                transform: 'scale(1) rotate(-45deg)',
+                            },
+                            {
+                                transform: 'scale(1.2) rotate(10deg)',
+                            },
+                            {
+                                transform: 'scale(1) rotate(0)',
+                            },
+                            {
+                                transform: 'scale(1) rotate(0)',
+                            },
+                        ]}
+                        transitionDuration={300}
+                    >
+                        <div>
+                            <Text style={{ fontSize: '4rem' }}>
+                                memes
+                            </Text>
+                        </div>
+                    </Anim>
+                </Slide>
+                {/* Slide 3 */}
+                <Slide
                     align="flex-start"
-                    notes="Two key ideas:<br /><br />
-                    - Static, sub-components, which are a great way to break up larger components (monoliths)<br /><br />
-                    - Using React.children for sharing state, which is interesting but kind maybe a little weird.<br /><br />
-                    I'm not sure if I would reccomend this pattern over render props, but I still want everyone to at least be aware of it, especially the first point"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 8rem"
+                        size={3}
+                        textAlign="left"
+                    >
+                        pronunciation:
+                    </Heading>
+                    <Text style={{ fontSize: '5rem', textAlign: 'left' }}>
+                        {'It\'s '}
+                        <Appear><span style={{ fontStyle: 'italic' }}>MEEM</span></Appear>
+                        <Appear><span>, not </span></Appear>
+                        <Appear><span style={{ fontStyle: 'italic' }}>ME-ME</span></Appear>
+                    </Text>
+
+                    <Text style={{ fontSize: '3rem', textAlign: 'left' }}>
+                        <Appear>
+                            <span>{'(now listen to me mess it up,'}</span>
+                        </Appear>
+                        <Appear>
+                            <span>{' just like with "JIFs" last time)'}</span>
+                        </Appear>
+                    </Text>
+                </Slide>
+                <Slide>
+                    <iframe
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        frameBorder="0"
+                        height="472"
+                        src="https://www.youtube.com/embed/zYPhXA2zHCU?rel=0&amp;controls=0&amp;showinfo=0"
+                        width="840"
+                    />
+                </Slide>
+                {/* Slide 4 */}
+                <Slide
+                    align="flex-start"
+                    notes=""
                 >
                     <Heading
                         margin="2rem 0 2rem"
                         size={3}
                         textAlign="left"
                     >
-                        Really two key ideas:
-                    </Heading>
-                    <List ordered>
-                        <Appear>
-                            <ListItem>
-                                Static "sub-component" properties.
-                            </ListItem>
-                        </Appear>
-                        <Appear>
-                            <ListItem>
-                                Using React.Children to share state with these sub-components.
-                            </ListItem>
-                        </Appear>
-                    </List>
-                </Slide>
-                {/* Slide 3 */}
-                <Slide
-                    align="flex-start"
-                    notes="Here is a our Collapsible component, implemented poorly. It locks you into a specific rendering AND manages the state (2 jobs)<br />
-                    There are a few things that this is doing well:<br />
-                    - using render methods to break up larger components<br />"
-                >
-                    <Heading
-                        margin="2rem 0 2rem"
-                        size={4}
-                        textAlign="left"
-                    >
-                        How often do we write stuff like this?
-                    </Heading>
-                    <Appear>
-                        <Image
-                            src={images.renderMethodExample}
-                            width="80%"
-                        />
-                    </Appear>
-                </Slide>
-                {/* Slide 4 */}
-                <Slide align="flex-start">
-                    <Heading
-                        margin="2rem 0 2rem"
-                        size={4}
-                        textAlign="left"
-                    >
-                        Advantages
+                        wat is a meme?
                     </Heading>
                     <List>
                         <Appear>
                             <ListItem>
-                                👌 Cleaner/simpler render method
+                                💡 an idea...
                             </ListItem>
                         </Appear>
                         <Appear>
                             <ListItem>
-                                👌 Breaking things up
+                                🕺 a behavior...
                             </ListItem>
                         </Appear>
                         <Appear>
                             <ListItem>
-                                <span>
-                                    👌 Render-methods can (ahem, should) be unit tested:
-                                </span>
-                                <Appear>
-                                    <div>
-                                        <Code>wrapper.instance().renderSomething()</Code>
-                                    </div>
-                                </Appear>
+                                👩‍🎤 a style...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                🌁 a concept...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                🔣 a symbol...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                👽 a happening or phenomenon...
+                            </ListItem>
+                        </Appear>
+                    </List>
+                </Slide>
+                {/* Slide 4 */}
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={3}
+                        textAlign="left"
+                    >
+                        wat is a meme?
+                    </Heading>
+                    <Text textAlign="left">
+                        ...which is spread, by means of:
+                    </Text>
+                    <List>
+                        <Appear>
+                            <ListItem>
+                                🗣 Speaking...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                ✍️ Writing...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                👩‍💻 Posting...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                👹 Rituals...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                etc...
                             </ListItem>
                         </Appear>
                     </List>
                 </Slide>
                 {/* Slide 5 */}
-                <Slide align="flex-start">
-                    <Heading
-                        margin="2rem 0 2rem"
-                        size={4}
-                        textAlign="left"
-                    >
-                        Static sub-components
-                    </Heading>
-                    <Appear>
-                        <Image
-                            src={images.staticClassProperties}
-                            width="80%"
-                        />
-                    </Appear>
-                </Slide>
-                {/* Slide 6 */}
-                <Slide align="flex-start">
-                    <Heading
-                        margin="2rem 0 2rem"
-                        size={4}
-                        textAlign="left"
-                    >
-                        Advantages
-                    </Heading>
-                    <List>
-                        <Appear>
-                            <ListItem>
-                                👌 Breaking things up
-                            </ListItem>
-                        </Appear>
-                        <Appear>
-                            <ListItem>
-                                👌 Even more readable render method (arguably)
-                            </ListItem>
-                        </Appear>
-                        <Appear>
-                            <ListItem>
-                                👌 No access to <Code>this</Code>/props and state, essentially making them into self-contained pure functions
-                            </ListItem>
-                        </Appear>
-                        <Appear>
-                            <ListItem>
-                                👌 Also nice to unit test/for Jest snapshotting
-                            </ListItem>
-                        </Appear>
-                        <Appear>
-                            <ListItem>
-                                👌 Allows users of component to use these sub-components directly and independently
-                            </ListItem>
-                        </Appear>
-                    </List>
-                </Slide>
-                {/* Slide 7 */}
-                <Slide align="flex-start">
-                    <Heading
-                        margin="2rem 0 2rem"
-                        size={4}
-                        textAlign="left"
-                    >
-                        Using React.Children for sharing state: Collapsible
-                    </Heading>
-                    <Appear>
-                        <Image
-                            src={images.usingChildren}
-                            width="80%"
-                        />
-                    </Appear>
-                </Slide>
-                {/* Slide 8 */}
-                <Slide align="flex-start">
-                    <Heading
-                        margin="2rem 0 2rem"
-                        size={4}
-                        textAlign="left"
-                    >
-                        Using React.Children for sharing state: Parent/consumer
-                    </Heading>
-                    <Appear>
-                        <Image
-                            src={images.usingChildrenUsage}
-                            width="80%"
-                        />
-                    </Appear>
-                </Slide>
-                {/* Slide 9 */}
-                <Slide align="flex-start">
-                    <Heading
-                        margin="2rem 0 2rem"
-                        size={4}
-                        textAlign="left"
-                    >
-                        Advantages
-                    </Heading>
-                    <List>
-                        <Appear>
-                            <ListItem>
-                                👌 Breaking things up
-                            </ListItem>
-                        </Appear>
-                        <Appear>
-                            <ListItem>
-                                👌 Gives more control to parent component over how to render
-                            </ListItem>
-                        </Appear>
-                        <Appear>
-                            <ListItem>
-                                👌 Is kind of neat I guess 🤷‍♂️
-                                <Appear>
-                                    <div>
-                                        <Image
-                                            src={images.neat}
-                                        />
-                                    </div>
-                                </Appear>
-                            </ListItem>
-                        </Appear>
-                    </List>
-                </Slide>
-                {/* Slide 10 */}
-                <Slide align="center center">
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
                     <Heading
                         margin="2rem 0 2rem"
                         size={3}
                         textAlign="left"
                     >
-                        So is this pattern better than render props?
+                        wat is a meme?
                     </Heading>
-                    <Appear>
-                        <Heading
-                            margin="2rem 0 4rem"
-                            size={4}
-                            textAlign="left"
-                        >
-                            no, but it's still pretty interesting.
-                        </Heading>
-                    </Appear>
-                    <Appear>
-                        <Text
-                            margin="2rem 0 6rem"
-                            textAlign="left"
-                        >
-                            (especially static "sub-components" thing)
-                        </Text>
-                    </Appear>
+                    <Text textAlign="left">
+                        ...and is spread across:
+                    </Text>
+                    <List>
+                        <Appear>
+                            <ListItem>
+                                👨‍👩‍👧‍👦 Friends/family...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                👥 Entire cultures/populations...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                💻 The Internet...
+                            </ListItem>
+                        </Appear>
+                    </List>
                 </Slide>
-                {/* Slide 11 */}
-                <Slide align="flex-start">
+
+                <Slide
+                    align="center center"
+                >
                     <Heading
-                        margin="2rem 0 4rem"
-                        size={4}
-                        textAlign="center"
+                        margin="2rem 0 2rem"
+                        size={1}
+                        textAlign="left"
                     >
-                        🧠 👌 Thanks 4 listening ✌️ 🧠
+                        Let me give you an example...
+                    </Heading>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Are you familiar with this meme?
                     </Heading>
                     <Appear>
                         <Image
-                            src={images.brains}
+                            src={images.fireDave}
+                            width="40vw"
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={3}
+                        textAlign="left"
+                    >
+                        🔥 Fire Dave
+                    </Heading>
+                    <List>
+                        <Appear>
+                            <ListItem>
+                                It's 💡 an idea...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                ...which is spread by means of 🗣 speaking...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                ...among 🦆 geese...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                ...which means it's a meme<Appear><span>, ya dip 😜</span></Appear>
+                            </ListItem>
+                        </Appear>
+                    </List>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={3}
+                        textAlign="left"
+                    >
+                        🔥 Fire Dave
+                    </Heading>
+                    <List>
+                        <Appear>
+                            <ListItem>
+                                It's evolved over time <Appear><span>(eg: people say different variations).</span></Appear>
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Lives in our minds.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                In this way, it's kind of a living organism.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                This is kind of weird to think about!
+                            </ListItem>
+                        </Appear>
+                    </List>
+                </Slide>
+
+
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Meme history: Dawkins
+                    </Heading>
+                    <List>
+                        <Appear>
+                            <ListItem>
+                                The term "meme" was coined in 1976...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                ...by noted evolutionary biologist and athiest Richard Dawkins...
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                ...in his book "The Selfish Gene".
+                            </ListItem>
+                        </Appear>
+                    </List>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Meme history: Dawkins
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.richardDawkins}
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Meme history: Dawkins
+                    </Heading>
+                    <List>
+                        <Appear>
+                            <ListItem>
+                                Dawkins theory can be summarized like this:
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                genes ▶️ biological evolution
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                memes ▶️ cultural evolution
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                memes are a self-replicating unit of culural evolution
+                            </ListItem>
+                        </Appear>
+                    </List>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Meme example: Germs
+                    </Heading>
+                    <List>
+                        <Appear>
+                            <ListItem>
+                                Let's say someone at work gets sick.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Let's say it's Topp.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                The germs that live inside Topp want to spread and reproduce.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Topp then decides to bring those germs to the office.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Topp then touches the handle on the coffeemaker and...
+                            </ListItem>
+                        </Appear>
+                    </List>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Meme example: Germs
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.baddaBing}
+                        />
+                    </Appear>
+                    <Text style={{ fontSize: '5rem' }}>
+                        <Appear><span>Germ city</span></Appear>
+                        <Appear><span>, all geese down 🤒 🤧 🤮</span></Appear>
+                    </Text>
+                </Slide>
+
+                {/* <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Meme example: Germs
+                    </Heading>
+                    <List>
+                        <Appear>
+                            <ListItem>
+                                Some people have their flu vaccine and are immune to Topp's germs.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Every year, slightly mutated forms of the virus are born.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                If they did not mutate, they would eventually die off.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Mutation and self-replication are crucial to the virus' long-term survival.
+                            </ListItem>
+                        </Appear>
+                    </List>
+                </Slide> */}
+
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Meme history: early examples
+                    </Heading>
+                    <Appear>
+                        <Text style={{ fontSize: '3rem', textAlign: 'left', margin: '0 0 2rem' }}>
+                            "Kilroy was here"
+                        </Text>
+                    </Appear>
+                    <Appear>
+                        <Image
+                            margin="0 auto 2rem 0"
+                            src={images.kilroy}
+                            width="30vw"
+                        />
+                    </Appear>
+                    <Appear>
+                        <Text style={{ fontSize: '3rem', textAlign: 'left', margin: '0 0 2rem' }}>
+                            WWII graffiti, which took on many different formats
+                        </Text>
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Meme example: Religion
+                    </Heading>
+                    <List>
+                        <Appear>
+                            <ListItem>
+                                Someone hears/tells a story.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                It passes on through spoken word and traditions.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Then, hundreds of years later, it's written down, and eventually translated.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Continues to spread, starts to fragment and traditions evolve.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Eventually you end up with many different "versions" of what were once similar religions.
+                            </ListItem>
+                        </Appear>
+                    </List>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Meme example: Religion
+                    </Heading>
+                    <Image
+                        src={images.jesus}
+                    />
+                </Slide>
+                <Slide
+                    align="center center"
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={1}
+                        textAlign="left"
+                    >
+                        {'Okay we get it... '}
+                        <Appear><span>but what about the funny stuff...</span></Appear>
+                    </Heading>
+                </Slide>
+                <Slide
+                    align="center center"
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={1}
+                        textAlign="left"
+                    >
+                        I think what you're thinking about are...
+                    </Heading>
+                </Slide>
+                <Slide
+                    align="center center"
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={1}
+                        textAlign="left"
+                    >
+                        <Appear>
+                            <div>
+                                <div>🎉 👌 💻 🎉 👌 💻 </div>
+                                <div>Internet memes!</div>
+                                <div>🎉 👌 💻 🎉 👌 💻 </div>
+                            </div>
+                        </Appear>
+                    </Heading>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Internet memes
+                    </Heading>
+                    <List>
+                        <Appear>
+                            <ListItem>
+                                The internet allows memes to spread extremely rapidly.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Because of the nature of the medium, internet memes often take the form of images or videos.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                They spread via direct communication, message boards and social media.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Improved access to editing tools (such as PhotoShop), allows memes to mutate just as rapidly as they are spread.
+                            </ListItem>
+                        </Appear>
+                    </List>
+                </Slide>
+                <Slide
+                    align="center center"
+                    notes=""
+                >
+                    <Text style={{ fontSize: '6rem', textAlign: 'left', margin: '0 0 2rem' }}>
+                        BASICALLY...
+                    </Text>
+                    <Appear>
+                        <Text style={{ fontSize: '4rem', textAlign: 'left' }}>
+                            The internet is to memes...
+                        </Text>
+                    </Appear>
+                    <Appear>
+                        <Text style={{ fontSize: '4rem', textAlign: 'left', margin: '0 0 2rem' }}>
+                            ...what pubic bathrooms are to germs... 🚻 🤢 😷
+                        </Text>
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Internet memes: image macros
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.macros}
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Internet memes: image macros
+                    </Heading>
+                    <List>
+                        <Appear>
+                            <ListItem>
+                                A very common internet meme format.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Consists of an image with text/caption superimposed on top.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Usually uses the <span style={{ fontFamily: 'Impact' }}>Impact</span> typeface.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Generally white text with black stroke.
+                            </ListItem>
+                        </Appear>
+                    </List>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Image Macros: Advice Animals
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.advice}
+                        />
+                    </Appear>
+                    <Appear>
+                        <Text style={{ textAlign: 'left', fontSize: '2rem' }}>
+                            (These are the first memes I remember actually remixing myself)
+                        </Text>
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Image Macros: LOLCats
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.cheeseburger}
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Shitty grammar: doge 🐶
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.doge}
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Internet memes: shitty grammar
+                    </Heading>
+                    <List>
+                        <Appear>
+                            <ListItem>
+                                It's very common for memes to employ poor spelling and grammer.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Partially just because people are dumb.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Other times it's due to language barriers.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Generally when things are accidentally misspelled or mispronounced, the community latches onto it even more.
+                            </ListItem>
+                        </Appear>
+                        {/* <Appear>
+                            <ListItem>
+                                These misspellings are often funnier and become the new branch for the
+                            </ListItem>
+                        </Appear> */}
+                    </List>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Shitty grammar: All your base
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.allYourBase}
+                            width="50vw"
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        all your base are belong to us
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.allYourSimpsons}
+                            width="50vw"
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        all your base are belong to us
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.allYourTrump}
+                            width="50vw"
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        all your base are belong to us
+                    </Heading>
+                    <iframe
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        frameBorder="0"
+                        height="472"
+                        src="https://www.youtube.com/embed/cQnDkgdIn_A?rel=0&amp;controls=0&amp;showinfo=0"
+                        width="840"
+                    />
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Internet memes: Non-images
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.planking}
+                            width="30vw"
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Internet memes: Non-images
+                    </Heading>
+                    <Appear>
+                        <iframe
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            frameBorder="0"
+                            height="472"
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&amp;controls=0&amp;showinfo=0"
+                            width="840"
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Internet memes: dank memes
+                    </Heading>
+                    <List>
+                        <Appear>
+                            <ListItem>
+                                There is a sub-genre of memes culture called "dank memes".
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Often "so bad it's good", or extremely dumb to the point of being funny again.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                These memes are often a combination of many different meme formats.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                This results in a multi-layered meme, which takes a knowledge about other memes to even be funny or relevant.
+                            </ListItem>
+                        </Appear>
+                        <Appear>
+                            <ListItem>
+                                Extremely difficult (or in some cases impossible) to show or explain to your parents.
+                            </ListItem>
+                        </Appear>
+                    </List>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Dank memes: distracted bf
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.distractedOne}
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Dank memes: distracted bf
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.distractedTwo}
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Dank memes: distracted bf
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.distractedThree}
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Dank memes: Sean's fav
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.lampsOg}
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                    notes=""
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        Dank memes: lamps
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.lampsDistracted}
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="center center"
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={2}
+                        textAlign="left"
+                    >
+                        {'Dave... '}
+                        <Appear><span>I saw a dank meme on the 'gram, what does it mean!?</span></Appear>
+                    </Heading>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={3}
+                        textAlign="left"
+                    >
+                        Know your meme
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.knowYrMeme}
+                        />
+                    </Appear>
+                </Slide>
+                <Slide
+                    align="flex-start"
+                >
+                    <Heading
+                        margin="2rem 0 2rem"
+                        size={4}
+                        textAlign="left"
+                    >
+                        <Appear><span>👌 That's all</span></Appear>
+                        <Appear><span>, thanks for listening!</span></Appear>
+                    </Heading>
+                    <Appear>
+                        <Image
+                            src={images.finale}
                         />
                     </Appear>
                 </Slide>
